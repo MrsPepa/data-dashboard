@@ -3,9 +3,113 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
 
+  <body>
+    <main>
+      <header> 
+        <img class="logo" src="assets/images/logo-laboratoria.svg" alt="">
+        <!-- MENU -->
+          <nav id="derecha">
+            <ul class="ulNav">
+              <li><a href="#" id="over">Overview</a></li>
+              <li><a href="#" id="stu">Students</a></li>
+              <li><a href="#" id="teach">Teachers</a></li>
+            </ul>
+          </nav>
+
+        <!--   MENU USER   -->
+        <div class="hamburger">
+          <div class="_layer -top"></div>
+          <div class="_layer -mid"></div>
+          <div class="_layer -bottom"></div>
+        </div>
+        <nav class="menuUser">
+          <ul>
+            <li><a href="#">Name</a></li>
+            <li><a href="#">Add Student</a></li>
+            <li><a href="#">Delete Student</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+
+        <!-- SELECCION DE SEDES -->
+        <section class="opcs">
+          <div id="sedes">
+
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#">Sedes</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Santiago<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li id="stgo20161"><a href="#">2016-II</a></li>
+                      <li id="stgo20171"><a href="#">2017-I</a></li>
+                      <li id="stgo20172"><a href="#">2017-II</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Arequipa<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li id="aqp20162"><a href="#">2016-II</a></li>
+                      <li id="aqp20171"><a href="#">2017-I</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ciudad de México<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li id="mx20171"><a href="#">2017-I</a></li>
+                      <li id="mx20172"><a href="#">2017-II</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lima<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li id="lima20162"><a href="#">2016-II</a></li>
+                      <li id="lima20171"><a href="#">2017-I</a></li>
+                      <li id="lima20172"><a href="#">2017-II</a></li>
+                    </ul>
+                </li>
+            </ul>
+          
+          </div>
+        </section>
+
+        <section id="promedio">
+          
+        </section>
+      </header>
+
+        <section id="overview">
+          
+        </section>
+
+        <section id="students" class="hide">
+          <div id="filter">
+            
+          </div>
+          <div class="input">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Buscar...">
+          </div>
+          <div id="alumnas">
+            
+          </div>
+        </section>
+
+        <section id="teachers" class="hide">
+          
+        </section>
+        
+    </main>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/af26e6fe45.js"></script>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
